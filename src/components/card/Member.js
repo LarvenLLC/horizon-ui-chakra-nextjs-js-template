@@ -6,7 +6,7 @@ import TransparentMenu from 'components/menu/TransparentMenu';
 // Custom icons
 import { IoEllipsisVertical } from 'react-icons/io5';
 
-export default function Default(props: { avatar: string; name: string; job: string }) {
+export default function Default(props) {
 	const { avatar, name, job, ...rest } = props;
 	const textColor = useColorModeValue('secondaryGray.900', 'white');
 	const bg = useColorModeValue('white', '#1B254B');
