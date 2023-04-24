@@ -6,7 +6,7 @@ import BarChart from 'components/charts/BarChart';
 import { barChartDataConsumption, barChartOptionsConsumption } from 'variables/charts';
 import { MdBarChart } from 'react-icons/md';
 
-export default function WeeklyRevenue(props: { [x: string]: any }) {
+export default function WeeklyRevenue(props) {
 	const { ...rest } = props;
 
 	// Chakra Color Mode
