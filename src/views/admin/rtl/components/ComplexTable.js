@@ -27,7 +27,7 @@ import Menu from 'components/menu/MainMenu'
 import { MdCheckCircle, MdCancel, MdOutlineError } from 'react-icons/md'
 import { TableProps } from 'views/admin/default/variables/columnsData'
 
-export default function CheckTable (props: TableProps) {
+export default function CheckTable (props) {
   const { columnsData, tableData } = props
 
   const columns = useMemo(() => columnsData, [columnsData])
