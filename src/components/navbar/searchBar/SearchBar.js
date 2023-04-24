@@ -6,14 +6,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
-export function SearchBar (props: {
-  variant?: string
-  background?: string
-  children?: JSX.Element
-  placeholder?: string
-  borderRadius?: string | number
-  [x: string]: any
-}) {
+export function SearchBar (props) {
   // Pass the computed styles into the `__css` prop
   const {
     variant,
