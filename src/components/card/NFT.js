@@ -1,7 +1,6 @@
 // Chakra imports
 import {
 	AvatarGroup,
-	Avatar,
 	Box,
 	Button,
 	Flex,
@@ -9,7 +8,6 @@ import {
 	Link,
 	Text,
 	useColorModeValue,
-	Spacer,
 	AspectRatio
 } from '@chakra-ui/react';
 // Custom components
@@ -20,14 +18,7 @@ import { Image } from 'components/image/Image';
 import { useState } from 'react';
 import { IoHeart, IoHeartOutline } from 'react-icons/io5';
 
-export default function NFT(props: {
-	image: string;
-	name: string;
-	author: string;
-	bidders: string[];
-	download: string;
-	currentbid: string | number;
-}) {
+export default function NFT(props) {
 	const { image, name, author, bidders, download, currentbid } = props;
 	const [ like, setLike ] = useState(false);
 	const textColor = useColorModeValue('navy.700', 'white');
