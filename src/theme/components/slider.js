@@ -3,7 +3,7 @@ export const sliderStyles = {
   components: {
     RangeSlider: {
       variants: {
-        main: (props: StyleFunctionProps) => ({
+        main: (props) => ({
           thumb: {
             bg: mode("brand.500", "brand.400")(props),
           },
