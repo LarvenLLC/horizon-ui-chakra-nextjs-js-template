@@ -14,14 +14,7 @@ import { useState, useEffect } from 'react'
 import AdminNavbarLinks from 'components/navbar/NavbarLinksAdmin'
 import { isWindowAvailable } from 'utils/navigation'
 
-export default function AdminNavbar (props: {
-  secondary: boolean
-  message: string | boolean
-  brandText: string
-  logoText: string
-  fixed: boolean
-  onOpen: (...args: any[]) => any
-}) {
+export default function AdminNavbar (props) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -39,7 +32,7 @@ export default function AdminNavbar (props: {
   // Here are all the props that may change depending on navbar's type or state.(secondary, variant, scrolled)
   let mainText = useColorModeValue('navy.700', 'white')
   let secondaryText = useColorModeValue('gray.700', 'white')
-	let navbarPosition = 'fixed' as const;
+	let navbarPosition = 'fixed';
   let navbarFilter = 'none'
   let navbarBackdrop = 'blur(20px)'
   let navbarShadow = 'none'
