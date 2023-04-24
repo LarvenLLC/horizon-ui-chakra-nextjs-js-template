@@ -261,7 +261,7 @@ export default function NftMarketplace () {
           >
             <Card px='0px' mb='20px'>
               <TableTopCreators
-                tableData={(tableDataTopCreators as unknown) as TableData[]}
+                tableData={(tableDataTopCreators)}
                 columnsData={tableColumnsTopCreators}
               />
             </Card>
