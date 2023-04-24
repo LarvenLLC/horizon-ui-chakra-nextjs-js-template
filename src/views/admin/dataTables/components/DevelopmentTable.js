@@ -22,9 +22,8 @@ import {
   useSortBy,
   useTable
 } from 'react-table'
-import { TableProps } from 'views/admin/default/variables/columnsData'
 
-export default function DevelopmentTable (props: TableProps) {
+export default function DevelopmentTable (props) {
   const { columnsData, tableData } = props
 
   const columns = useMemo(() => columnsData, [columnsData])
@@ -121,7 +120,7 @@ export default function DevelopmentTable (props: TableProps) {
                   } else if (cell.column.Header === 'TECH') {
                     data = (
                       <Flex align='center'>
-                        {cell.value.map((item: string, key: number) => {
+                        {cell.value.map((item, key) => {
                           if (item === 'apple') {
                             return (
                               <AppleLogo
