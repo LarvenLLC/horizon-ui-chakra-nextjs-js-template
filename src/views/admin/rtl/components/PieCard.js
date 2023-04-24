@@ -6,7 +6,7 @@ import PieChart from 'components/charts/PieChart';
 import { pieChartData, pieChartOptions } from 'variables/charts';
 import { VSeparator } from 'components/separator/Separator';
 
-export default function Conversion(props: { [x: string]: any }) {
+export default function Conversion(props) {
 	const { ...rest } = props;
 
 	// Chakra Color Mode
