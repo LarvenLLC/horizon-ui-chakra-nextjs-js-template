@@ -25,7 +25,7 @@ export const switchStyles = {
       },
 
       variants: {
-        main: (props: StyleFunctionProps) => ({
+        main: (props) => ({
           track: {
             bg: mode("gray.300", "navy.700")(props),
           },
