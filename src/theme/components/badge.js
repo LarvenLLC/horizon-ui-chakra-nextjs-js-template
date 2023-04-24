@@ -13,7 +13,7 @@ export const badgeStyles: { components: { Badge: StyleConfig } } = {
         outline: () => ({
           borderRadius: "16px",
         }),
-        brand: (props: StyleFunctionProps) => ({
+        brand: (props) => ({
           bg: mode("brand.500", "brand.400")(props),
           color: "white",
           _focus: {
