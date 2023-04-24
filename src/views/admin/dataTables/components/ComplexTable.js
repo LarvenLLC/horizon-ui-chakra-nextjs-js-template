@@ -26,7 +26,7 @@ import Menu from 'components/menu/MainMenu'
 // Assets
 import { MdCheckCircle, MdCancel, MdOutlineError } from 'react-icons/md'
 import { TableProps } from 'views/admin/default/variables/columnsData'
-export default function ColumnsTable (props: TableProps) {
+export default function ColumnsTable (props) {
   const { columnsData, tableData } = props
 
   const columns = useMemo(() => columnsData, [columnsData])
