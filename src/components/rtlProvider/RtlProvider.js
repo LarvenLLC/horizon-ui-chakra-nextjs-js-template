@@ -10,7 +10,7 @@ let options = {
   rtl: { key: 'css-ar', stylisPlugins: [rtl] },
   ltr: { key: 'css-en' }
 }
-export function RtlProvider (props: { children: ReactNode }) {
+export function RtlProvider (props) {
   const { children } = props
   const dir =
     isWindowAvailable() && window.document.documentElement.dir == 'ar'
