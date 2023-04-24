@@ -22,7 +22,7 @@ import {
 } from 'react-table'
 import { TableProps } from 'views/admin/default/variables/columnsData'
 
-function TopCreatorTable (props: TableProps) {
+function TopCreatorTable (props) {
   const { columnsData, tableData } = props
 
   const columns = useMemo(() => columnsData, [columnsData])
