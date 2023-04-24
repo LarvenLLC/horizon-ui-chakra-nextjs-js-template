@@ -5,7 +5,7 @@ import Card from 'components/card/Card';
 import Information from 'views/admin/profile/components/Information';
 
 // Assets
-export default function GeneralInformation(props: { [x: string]: any }) {
+export default function GeneralInformation(props) {
 	const { ...rest } = props;
 	// Chakra Color Mode
 	const textColorPrimary = useColorModeValue('secondaryGray.900', 'white');
