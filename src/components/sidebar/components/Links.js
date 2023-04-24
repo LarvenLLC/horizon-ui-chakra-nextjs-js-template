@@ -4,13 +4,8 @@
 import { Box, Flex, HStack, Text, useColorModeValue } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import { IRoute } from 'types/navigation'
 
-interface SidebarLinksProps {
-  routes: IRoute[]
-}
-
-export function SidebarLinks (props: SidebarLinksProps) {
+export function SidebarLinks (props) {
   const { routes } = props
 
   //   Chakra color mode
@@ -26,13 +21,13 @@ export function SidebarLinks (props: SidebarLinksProps) {
   let brandColor = useColorModeValue('brand.500', 'brand.400')
 
   // verifies if routeName is the one active (in browser input)
-  const activeRoute = (routeName: string) => {
+  const activeRoute = (routeName) => {
     return router.pathname.includes(routeName)
   }
 
   // this function creates the links from the secondary accordions (for example auth -> sign-in -> default)
-  const createLinks = (routes: IRoute[]) => {
-    return routes.map((route, index: number) => {
+  const createLinks = (routes) => {
+    return routes.map((route, index) => {
       if (
         route.layout === '/admin' ||
         route.layout === '/auth' ||
