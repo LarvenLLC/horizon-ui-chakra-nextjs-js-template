@@ -1,11 +1,11 @@
 import dynamic from 'next/dist/shared/lib/dynamic'
 import React from 'react'
 import { isWindowAvailable } from 'utils/navigation'
-import { ChartProps, ChartState } from './LineAreaChart'
+
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
 
-class ColumnChart extends React.Component<ChartProps, ChartState> {
-  constructor (props: ChartState) {
+class ColumnChart extends React.Component {
+  constructor (props) {
     super(props)
     this.state = {
       chartData: [],
