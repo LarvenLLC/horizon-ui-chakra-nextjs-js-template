@@ -3,16 +3,7 @@ import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react'
 import Card from 'components/card/Card'
 import { NextAvatar } from 'components/image/Avatar'
 
-export default function Banner (props: {
-  banner: string
-  avatar: string
-  name: string
-  job: string
-  posts: number | string
-  followers: number | string
-  following: number | string
-  [x: string]: any
-}) {
+export default function Banner (props) {
   const {
     banner,
     avatar,
