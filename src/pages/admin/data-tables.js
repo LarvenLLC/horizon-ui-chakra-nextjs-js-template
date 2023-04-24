@@ -28,19 +28,19 @@ export default function DataTables () {
         >
           <DevelopmentTable
             columnsData={columnsDataDevelopment}
-            tableData={(tableDataDevelopment as unknown) as TableData[]}
+            tableData={(tableDataDevelopment)}
           />
           <CheckTable
             columnsData={columnsDataCheck}
-            tableData={(tableDataCheck as unknown) as TableData[]}
+            tableData={(tableDataCheck)}
           />
           <ColumnsTable
             columnsData={columnsDataColumns}
-            tableData={(tableDataColumns as unknown) as TableData[]}
+            tableData={(tableDataColumns)}
           />
           <ComplexTable
             columnsData={columnsDataComplex}
-            tableData={(tableDataComplex as unknown) as TableData[]}
+            tableData={(tableDataComplex)}
           />
         </SimpleGrid>
       </Box>
