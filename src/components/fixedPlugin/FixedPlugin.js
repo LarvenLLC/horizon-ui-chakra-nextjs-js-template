@@ -5,7 +5,7 @@ import { IoMdMoon, IoMdSunny } from 'react-icons/io'
 import React, { useEffect } from 'react'
 import { isWindowAvailable } from 'utils/navigation'
 
-export default function FixedPlugin (props: { [x: string]: any }) {
+export default function FixedPlugin (props) {
   const { ...rest } = props
   const { colorMode, toggleColorMode } = useColorMode()
   let bgButton = 'linear-gradient(135deg, #868CFF 0%, #4318FF 100%)'
