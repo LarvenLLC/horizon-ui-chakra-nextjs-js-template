@@ -5,21 +5,16 @@ import Footer from 'components/footer/FooterAdmin'
 import Navbar from 'components/navbar/NavbarAdmin'
 import Sidebar from 'components/sidebar/Sidebar'
 import { SidebarContext } from 'contexts/SidebarContext'
-import { PropsWithChildren, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import routes from 'routes'
 import {
   getActiveNavbar,
   getActiveNavbarText,
   getActiveRoute,
-  isWindowAvailable
 } from 'utils/navigation'
 
-interface DashboardLayoutProps extends PropsWithChildren {
-  [x: string]: any
-}
-
 // Custom Chakra theme
-export default function AdminLayout (props: DashboardLayoutProps) {
+export default function AdminLayout (props) {
   const { children, ...rest } = props
   // states and functions
   const [fixed] = useState(false)
