@@ -12,14 +12,10 @@ import {
 } from '@chakra-ui/react'
 import { useMemo } from 'react'
 import {
-  ColumnInstance,
-  HeaderGroup,
-  Row,
   useGlobalFilter,
   usePagination,
   useSortBy,
   useTable,
-  UseTableColumnProps
 } from 'react-table'
 
 // Custom components
@@ -28,7 +24,7 @@ import Menu from 'components/menu/MainMenu'
 import {} from 'components/charts/LineAreaChart'
 import { TableProps } from '../variables/columnsData'
 
-export default function CheckTable (props: TableProps) {
+export default function CheckTable (props) {
   const { columnsData, tableData } = props
 
   const columns = useMemo(() => columnsData, [columnsData])
@@ -76,12 +72,12 @@ export default function CheckTable (props: TableProps) {
       </Flex>
       <Table {...getTableProps()} variant='simple' color='gray.500' mb='24px'>
         <Thead>
-          {headerGroups.map((headerGroup, index: number) => (
+          {headerGroups.map((headerGroup, index) => (
             <Tr {...headerGroup.getHeaderGroupProps()} key={index}>
               {headerGroup.headers.map(
                 (
-                  column: ColumnInstance & UseTableColumnProps<{}>,
-                  index: number
+                  column,
+                  index
                 ) => (
                   <Th
                     {...column.getHeaderProps(column.getSortByToggleProps())}
@@ -104,11 +100,11 @@ export default function CheckTable (props: TableProps) {
           ))}
         </Thead>
         <Tbody {...getTableBodyProps()}>
-          {page.map((row: Row, index: number) => {
+          {page.map((row, index) => {
             prepareRow(row)
             return (
               <Tr {...row.getRowProps()} key={index}>
-                {row.cells.map((cell, index: number) => {
+                {row.cells.map((cell, index) => {
                   let data
                   if (cell.column.Header === 'NAME') {
                     data = (
