@@ -1,4 +1,4 @@
-import { extendTheme, HTMLChakraProps, ThemingProps } from '@chakra-ui/react';
+import { extendTheme } from '@chakra-ui/react';
 import { CardComponent } from './additions/card/card';
 import { buttonStyles } from './components/button';
 import { badgeStyles } from './components/badge';
@@ -24,5 +24,3 @@ export default extendTheme(
 	switchStyles, // switch styles
 	CardComponent // card component
 );
-
-export interface CustomCardProps extends HTMLChakraProps<'div'>, ThemingProps {}
