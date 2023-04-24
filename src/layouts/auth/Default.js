@@ -5,9 +5,8 @@ import FixedPlugin from 'components/fixedPlugin/FixedPlugin';
 // Assets
 import { FaChevronLeft } from 'react-icons/fa';
 import Link from 'next/link';
-import { ReactNode } from 'react';
 
-function AuthIllustration(props: { children: ReactNode; illustrationBackground: string }) {
+function AuthIllustration(props) {
 	const authBg = useColorModeValue('white', 'navy.900');
 	const { children, illustrationBackground } = props;
 	// Chakra color mode
