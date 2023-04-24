@@ -9,7 +9,7 @@ import { barChartDataDailyTraffic, barChartOptionsDailyTraffic } from 'variables
 // Assets
 import { RiArrowUpSFill } from 'react-icons/ri';
 
-export default function DailyTraffic(props: { [x: string]: any }) {
+export default function DailyTraffic(props) {
 	const { ...rest } = props;
 
 	// Chakra Color Mode
