@@ -1,8 +1,3 @@
-import { createContext, Dispatch, SetStateAction } from "react";
+import { createContext } from "react";
 
-interface SidebarContextType {
-  toggleSidebar: boolean;
-  setToggleSidebar: Dispatch<SetStateAction<boolean>>;
-}
-
-export const SidebarContext = createContext<Partial<SidebarContextType>>({});
+export const SidebarContext = createContext({});
