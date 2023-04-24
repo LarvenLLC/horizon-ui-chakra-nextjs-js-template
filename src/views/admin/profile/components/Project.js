@@ -13,13 +13,7 @@ import { Image } from 'components/image/Image'
 // Assets
 import { MdEdit } from 'react-icons/md'
 
-export default function Project (props: {
-  title: string
-  ranking: number | string
-  link: string
-  image: string
-  [x: string]: any
-}) {
+export default function Project (props) {
   const { title, ranking, link, image, ...rest } = props
   // Chakra Color Mode
   const textColorPrimary = useColorModeValue('secondaryGray.900', 'white')
