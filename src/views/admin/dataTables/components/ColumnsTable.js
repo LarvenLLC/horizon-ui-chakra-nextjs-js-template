@@ -20,8 +20,7 @@ import {
 // Custom components
 import Card from 'components/card/Card'
 import Menu from 'components/menu/MainMenu'
-import { TableProps } from 'views/admin/default/variables/columnsData'
-export default function ColumnsTable (props: TableProps) {
+export default function ColumnsTable (props) {
   const { columnsData, tableData } = props
 
   const columns = useMemo(() => columnsData, [columnsData])
