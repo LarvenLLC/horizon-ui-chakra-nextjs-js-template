@@ -6,14 +6,12 @@ import Navbar from 'components/navbar/NavbarRTL';
 import Sidebar from 'components/sidebar/Sidebar';
 import { RtlProvider } from 'components/rtlProvider/RtlProvider';
 import { SidebarContext } from 'contexts/SidebarContext';
-import { PropsWithChildren, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import routes from 'routes';
 import { getActiveNavbar, getActiveNavbarText, getActiveRoute, isWindowAvailable } from 'utils/navigation';
 
-interface RTLLayoutProps extends PropsWithChildren {}
-
 // Custom Chakra theme
-export default function RTLLayout(props: RTLLayoutProps) {
+export default function RTLLayout(props) {
 	const { children, ...rest } = props;
 	const [ fixed ] = useState(false);
 	const [ toggleSidebar, setToggleSidebar ] = useState(false);
