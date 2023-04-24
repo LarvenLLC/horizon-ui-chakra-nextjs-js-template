@@ -9,7 +9,7 @@ import {
   barChartOptionsUserActivity
 } from 'variables/charts'
 
-export default function UserActivity (props: { [x: string]: any }) {
+export default function UserActivity (props) {
   const { ...rest } = props
 
   // Chakra Color Mode
@@ -43,7 +43,7 @@ export default function UserActivity (props: { [x: string]: any }) {
       <Box h='240px' mt='auto'>
         <BarChart
           chartData={barChartDataUserActivity}
-          chartOptions={(barChartOptionsUserActivity as unknown) as ApexOptions}
+          chartOptions={barChartOptionsUserActivity}
         />
       </Box>
     </Card>
