@@ -8,7 +8,7 @@ import Project3 from 'img/profile/Project3.png'
 import Card from 'components/card/Card'
 import Project from 'views/admin/profile/components/Project'
 
-export default function Projects (props: { [x: string]: any }) {
+export default function Projects (props) {
   const { ...rest } = props
   // Chakra Color Mode
   const textColorPrimary = useColorModeValue('secondaryGray.900', 'white')
