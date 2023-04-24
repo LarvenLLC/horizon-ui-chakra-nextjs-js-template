@@ -1,5 +1,4 @@
 import { ChakraProvider } from '@chakra-ui/react'
-import { AppProps } from 'next/app'
 import React from 'react'
 import theme from 'theme/theme'
 
@@ -11,7 +10,7 @@ import 'react-calendar/dist/Calendar.css'
 import 'styles/MiniCalendar.css'
 import Head from 'next/head'
 
-function MyApp ({ Component, pageProps }: AppProps) {
+function MyApp ({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Head>
