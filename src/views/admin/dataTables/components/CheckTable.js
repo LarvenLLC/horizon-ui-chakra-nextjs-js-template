@@ -23,7 +23,7 @@ import Card from 'components/card/Card'
 import Menu from 'components/menu/MainMenu'
 import { TableProps } from 'views/admin/default/variables/columnsData'
 import { isWindowAvailable } from 'utils/navigation'
-export default function CheckTable (props: TableProps) {
+export default function CheckTable (props) {
   const { columnsData, tableData } = props
 
   const columns = useMemo(() => columnsData, [columnsData])
