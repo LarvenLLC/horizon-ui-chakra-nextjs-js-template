@@ -1,25 +1,15 @@
-import { ApexOptions } from 'apexcharts'
 import dynamic from 'next/dist/shared/lib/dynamic'
 import React from 'react'
 import { isWindowAvailable } from 'utils/navigation'
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false })
 
-export type ChartState = {
-  chartData: ApexAxisChartSeries | ApexNonAxisChartSeries
-  chartOptions: ApexOptions
-}
-
-export type ChartProps = ChartState & {
-  [x: string]: any
-}
-
-class LineChart extends React.Component<ChartProps, ChartState> {
-  state: ChartState = {
+class LineChart extends React.Component {
+  state = {
     chartData: [],
     chartOptions: {}
   }
 
-  constructor (props: ChartProps) {
+  constructor (props) {
     super(props)
   }
 
