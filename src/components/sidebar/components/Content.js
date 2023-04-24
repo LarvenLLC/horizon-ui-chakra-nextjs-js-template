@@ -8,11 +8,7 @@ import { IRoute } from 'types/navigation';
 
 // FUNCTIONS
 
-interface SidebarContentProps {
-	routes: IRoute[];
-}
-
-function SidebarContent(props: SidebarContentProps) {
+function SidebarContent(props) {
 	const { routes } = props;
 	// SIDEBAR
 	return (
