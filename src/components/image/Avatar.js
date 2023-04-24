@@ -1,10 +1,5 @@
 import { chakra, useColorMode } from '@chakra-ui/system'
-import { ComponentProps } from 'react'
 import { Image } from './Image'
-
-interface AvatarImageProps extends ComponentProps<typeof Image> {
-  showBorder?: boolean
-}
 
 export function NextAvatar ({
   src,
@@ -12,7 +7,7 @@ export function NextAvatar ({
   alt,
   style,
   ...props
-}: AvatarImageProps) {
+}) {
   const { colorMode } = useColorMode()
 
   return (
