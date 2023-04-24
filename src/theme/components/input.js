@@ -10,7 +10,7 @@ export const inputStyles = {
       },
 
       variants: {
-        main: (props: StyleFunctionProps) => ({
+        main: (props) => ({
           field: {
             bg: mode("transparent", "navy.800")(props),
             border: "1px solid",
@@ -22,7 +22,7 @@ export const inputStyles = {
             _placeholder: { color: "secondaryGray.400" },
           },
         }),
-        auth: (props: StyleFunctionProps) => ({
+        auth: (props) => ({
           field: {
             fontWeight: "500",
             color: mode("navy.700", "white")(props),
@@ -111,7 +111,7 @@ export const inputStyles = {
       },
 
       variants: {
-        main: (props: StyleFunctionProps) => ({
+        main: (props) => ({
           field: {
             bg: mode("transparent", "navy.800")(props),
             border: "1px solid",
@@ -124,7 +124,7 @@ export const inputStyles = {
             color: "secondaryGray.600",
           },
         }),
-        mini: (props: StyleFunctionProps) => ({
+        mini: (props) => ({
           field: {
             bg: mode("transparent", "navy.800")(props),
             border: "0px solid transparent",
@@ -152,7 +152,7 @@ export const inputStyles = {
             color: "secondaryGray.600",
           },
         }),
-        transparent: (props: StyleFunctionProps) => ({
+        transparent: (props) => ({
           field: {
             bg: "transparent",
             border: "0px solid",
@@ -184,7 +184,7 @@ export const inputStyles = {
             _placeholder: { color: "secondaryGray.600" },
           },
         }),
-        authSecondary: (props: StyleFunctionProps) => ({
+        authSecondary: (props) => ({
           field: {
             bg: "transparent",
             border: "1px solid",
@@ -194,7 +194,7 @@ export const inputStyles = {
             _placeholder: { color: "secondaryGray.600" },
           },
         }),
-        search: (props: StyleFunctionProps) => ({
+        search: (props) => ({
           field: {
             border: "none",
             py: "11px",
