@@ -9,7 +9,7 @@ import { MdBarChart, MdOutlineCalendarToday } from 'react-icons/md';
 import { RiArrowUpSFill } from 'react-icons/ri';
 import { lineChartDataTotalSpent, lineChartOptionsTotalSpent } from 'variables/charts';
 
-export default function TotalSpent(props: { [x: string]: any }) {
+export default function TotalSpent(props) {
 	const { ...rest } = props;
 
 	// Chakra Color Mode
