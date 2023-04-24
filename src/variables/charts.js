@@ -1,7 +1,3 @@
-import { ApexOptions } from "apexcharts";
-
-type ApexGeneric = ApexOptions & any;
-
 export const barChartDataDailyTraffic = [
   {
     name: "Daily Traffic",
@@ -9,7 +5,7 @@ export const barChartDataDailyTraffic = [
   },
 ];
 
-export const barChartOptionsDailyTraffic: ApexGeneric = {
+export const barChartOptionsDailyTraffic = {
   chart: {
     toolbar: {
       show: false,
@@ -220,7 +216,7 @@ export const barChartDataConsumption = [
   },
 ];
 
-export const barChartOptionsConsumption: ApexGeneric = {
+export const barChartOptionsConsumption = {
   chart: {
     stacked: true,
     toolbar: {
@@ -308,7 +304,7 @@ export const barChartOptionsConsumption: ApexGeneric = {
   },
 };
 
-export const pieChartOptions: ApexGeneric = {
+export const pieChartOptions = {
   labels: ["Your files", "System", "Empty"],
   colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
   chart: {
@@ -362,7 +358,7 @@ export const lineChartDataTotalSpent = [
   },
 ];
 
-export const lineChartOptionsTotalSpent: ApexOptions = {
+export const lineChartOptionsTotalSpent = {
   chart: {
     toolbar: {
       show: false,
