@@ -1,4 +1,3 @@
-import { Column } from "react-table";
 import tableDataCheck from "./tableDataCheck.json";
 
 export const columnsDataCheck = [
@@ -37,20 +36,3 @@ export const columnsDataComplex = [
     accessor: "progress",
   },
 ];
-
-export type ColumnData = Column[];
-
-export type TableData = Column<{
-  name: (string | boolean)[];
-  date: string;
-  progress: number;
-  quantity?: number;
-  status?: string;
-  artworks?: string;
-  rating?: number;
-}>;
-
-export type TableProps = {
-  columnsData: ColumnData;
-  tableData: TableData[];
-};
